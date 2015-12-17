@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='djasmine',
-    version='0.2.1',
+    version='0.2.2',
     packages=['djasmine'],
     url='https://github.com/tjwalch/djasmine',
     license='MIT',
