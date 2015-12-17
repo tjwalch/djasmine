@@ -17,7 +17,7 @@ install:
 branches:
  only:
   - master
-script: coverage run manage.py test djasmine
+script: coverage run manage.py test djasmine --liveserver=localhost:8800-9990
 after_success:
   - coverage report
   - coveralls

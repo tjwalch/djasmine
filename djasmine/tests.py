@@ -3,7 +3,7 @@ from django import test
 from . import testcase
 from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import reverse
-from selenium.webdriver.firefox.webdriver import WebDriver
+from selenium.webdriver.phantomjs.webdriver import WebDriver
 
 
 class TestTheTest(testcase.JasmineRunnerTestCase):
