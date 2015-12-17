@@ -25,7 +25,7 @@ class JasmineRunnerTestCase(StaticLiveServerTestCase):
 
     def assertSpecPasses(self, spec):
         self.selenium.get('%s%s' % (self.live_server_url, reverse(
-            'jasmine-run-one-spec', kwargs={'spec': spec})))
+            'jasmine-run-spec', kwargs={'spec': spec})))
         WebDriverWait(self.selenium, 100).until(
             lambda driver:
             driver.execute_script("return jsApiReporter.finished;")

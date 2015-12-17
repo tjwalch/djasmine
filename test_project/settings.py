@@ -58,7 +58,7 @@ ROOT_URLCONF = 'test_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR + '/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,9 +87,10 @@ DATABASES = {
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+JASMINE_SPEC_ROOT = BASE_DIR + '/spec'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     jasmine_core.__path__[0],
-    BASE_DIR + '/spec/javascripts',
+    JASMINE_SPEC_ROOT,
 ]

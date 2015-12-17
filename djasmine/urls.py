@@ -4,7 +4,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^(?P<spec>[\w-]+\.spec\.js)/$',
-        views.jasmine_run_one_spec,
-        name='jasmine-run-one-spec'),
+    url(r'^(?P<spec>[\w/-]+\.[Ss]pec\.js)?/?$',
+        views.jasmine_run_spec,
+        name='jasmine-run-spec'),
 ]

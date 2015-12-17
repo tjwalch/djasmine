@@ -58,3 +58,4 @@ target/
 /db.sqlite3
 .idea
 /README.html
+/MANIFEST

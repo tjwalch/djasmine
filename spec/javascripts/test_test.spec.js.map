@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "test_test.spec.js",
+  "sourceRoot": "",
+  "sources": [
+    "test_test.spec.coffee"
+  ],
+  "names": [],
+  "mappings": ";AACA;EAAA,QAAA,CAAS,gBAAT,EAA2B,SAAA;WACzB,EAAA,CAAG,aAAH,EAAkB,SAAA;aAChB,MAAA,CAAO,KAAP,CACA,CAAC,IADD,CACM,IADN;IADgB,CAAlB;EADyB,CAA3B;;EAKA,QAAA,CAAS,gBAAT,EAA2B,SAAA;WACzB,EAAA,CAAG,aAAH,EAAkB,SAAA;aAChB,MAAA,CAAO,IAAP,CACA,CAAC,IADD,CACM,IADN;IADgB,CAAlB;EADyB,CAA3B;AALA"
+}

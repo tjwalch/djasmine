@@ -17,6 +17,7 @@ setup(
     author_email='tomaswalch@gmail.com',
     description='Integrates Jasmine JavaScript tests with the Django test framework in a simple but effective DRY way.',
     long_description=README,
+    include_package_data=True,
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -33,5 +34,6 @@ setup(
         'django',
         'jasmine_core',
         'selenium',
+        'glob2',
     ],
 )
