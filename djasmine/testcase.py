@@ -9,7 +9,7 @@ class JasmineRunnerTestCase(StaticLiveServerTestCase):
 
     @classmethod
     def setUpClass(cls):
-        super().setUpClass()
+        super(JasmineRunnerTestCase, cls).setUpClass()
         try:
             cls.selenium = cls.webdriver()
         except (AttributeError, TypeError):
@@ -21,7 +21,7 @@ class JasmineRunnerTestCase(StaticLiveServerTestCase):
     @classmethod
     def tearDownClass(cls):
         cls.selenium.quit()
-        super().tearDownClass()
+        super(JasmineRunnerTestCase, cls).tearDownClass()
 
     def assertSpecPasses(self, spec):
         self.selenium.get('%s%s' % (self.live_server_url, reverse(
