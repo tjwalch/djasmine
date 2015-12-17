@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type"/>
+    <title>Djasmine suite</title>
+
+    {% block jasmine_core %}
+        <link rel="shortcut icon" href="{% static 'images/jasmine_favicon.png' %}">
+        <link rel="stylesheet" href="{% static 'jasmine.css' %}" type="text/css" media="screen"/>
+        <script src="{% static 'jasmine.js' %}" type="text/javascript"></script>
+        <script src="{% static 'jasmine-html.js' %}" type="text/javascript"></script>
+        <script src="{% static 'json2.js' %}" type="text/javascript"></script>
+        <script src="{% static 'boot.js' %}" type="text/javascript"></script>
+    {% endblock %}
+    {% block sitejs %}
+        {% include 'javascripts.html' %}
+    {% endblock %}
+    {% block specs %}
+        {% for spec in specfiles %}
+            <script src="{% static spec %}" type="text/javascript"></script>
+        {% endfor %}
+    {% endblock %}
+</head>
+<body>
+<div id="jasmine_content"></div>
+</body>
+</html>
