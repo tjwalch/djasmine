@@ -2,7 +2,7 @@
 import os.path
 import glob2
 from django.conf import settings
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 
 
 def find_specfiles():
@@ -16,7 +16,8 @@ def jasmine_run_spec(request, spec=None):
         specfiles = [spec]
     else:
         specfiles = find_specfiles()
-    return render_to_response(
+    return render(
+        request,
         'djasmine/specrunner.html',
         {'specfiles': specfiles},
     )
